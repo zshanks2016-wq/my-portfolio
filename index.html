@@ -3,48 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7c3aed">
+<title>معرض أعمال محمد صالح | تصميم أكياس وهويات وتسويق</title>
+<meta name="description" content="مختارات من أعمال محمد صالح في تصميم الأكياس والتغليف والهويات البصرية والحملات التسويقية.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<title>معرض أعمال محمد صالح</title>
 </head>
 <body>
-<header><nav class="container"><span class="logo">أعمال محمد صالح</span>
-<ul><li><a href="#works">الأعمال</a></li><li><a href="#contact">تواصل</a></li></ul></nav></header>
+<div class="progress" id="progress"></div>
 
-<div class="hero"><div class="container">
-<h1>مرحبًا، أنا محمد صالح</h1>
-<p>هنا مختارات من أعمالي في تصميم الأكياس والملصقات والحملات التسويقية.</p>
-<a class="btn" href="#works">شاهد الأعمال</a>
-</div></div>
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#home" class="brand">معرض<span>أعمالي</span><i></i></a>
+    <nav class="links">
+      <a href="#works">الأعمال</a>
+      <a href="#process">منهجيتي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="btn btn-dark btn-sm">💬 تواصل</a>
+  </div>
+</header>
 
-<section id="works"><div class="container">
-<h2>أعمالي</h2>
-<div class="grid">
-<article class="card work">
-<img src="assets/images/shopping-bag.webp" alt="تصميم كيس تسوق بلون واحد" loading="lazy">
-<div class="info"><span class="tag">تصميم أكياس</span><h3>كيس تسوق لمتجر محلي</h3>
-<p>تصميم بلون واحد قلّل تكلفة الطباعة على العميل 30%.</p></div>
-</article>
-<article class="card work">
-<img src="assets/images/sticker-pack.webp" alt="مجموعة ملصقات ملونة" loading="lazy">
-<div class="info"><span class="tag">ملصقات</span><h3>مجموعة ستيكرات لمقهى</h3>
-<p>12 ملصقًا للتغليف رفعت تفاعل الزبائن على الصور المنشورة.</p></div>
-</article>
-<article class="card work">
-<img src="assets/images/social-campaign.webp" alt="تصميم منشور لحملة على السوشال ميديا" loading="lazy">
-<div class="info"><span class="tag">تسويق رقمي</span><h3>حملة إعلانية على إنستغرام</h3>
-<p>سلسلة منشورات حققت ضعف عدد الطلبات خلال شهر.</p></div>
-</article>
-</div>
-</div></section>
+<main id="home">
+  <section class="hero container">
+    <div class="hero-text">
+      <span class="badge reveal"><i></i> معرض الأعمال · تصميم وتسويق</span>
+      <h1 class="reveal">أحوّل فكرة مشروعك<br>إلى <span class="grad">تصميم يُطبع ويُباع</span></h1>
+      <p class="reveal">كل كيس وعلبة وإعلان هنا بدأ كفكرة على ورق، وانتهى في أيدي الناس. ستة أعمال من مجالات مختلفة: أكياس، تغليف، هويات، وحملات.</p>
+      <div class="cta reveal">
+        <a href="#works" class="btn btn-dark">استعرض الأعمال ↓</a>
+        <a href="#contact" class="btn btn-light">اطلب تصميمك</a>
+      </div>
+      <div class="stats reveal">
+        <div><b><span data-count="6">0</span></b><small>أعمال مختارة</small></div>
+        <div><b><span data-count="4">0</span></b><small>مجالات تصميم</small></div>
+        <div><b><span data-count="100">0</span>%</b><small>جاهزة للطباعة</small></div>
+      </div>
+    </div>
+    <div class="hero-stack reveal" aria-hidden="true">
+      <figure class="card-float c1"><img src="assets/images/bag-red.webp" alt=""><figcaption>🛍️ كيس تسوق</figcaption></figure>
+      <figure class="card-float c2"><img src="assets/images/social-campaign.webp" alt=""><figcaption>📱 حملة إعلانية</figcaption></figure>
+      <figure class="card-float c3"><img src="assets/images/brand-identity.webp" alt=""><figcaption>💎 هوية بصرية</figcaption></figure>
+    </div>
+  </section>
 
-<section id="contact" class="contact"><div class="container">
-<h2>تواصل</h2>
-<p>أعجبك عمل؟ لنصمم مشروعك القادم معًا.</p>
-<a class="btn" href="mailto:mohammed.saleh@example.com">mohammed.saleh@example.com</a>
-</div></section>
+  <div class="ticker" aria-hidden="true">
+    <div class="tick-track">
+      <span>✦ كليشيهات</span><span>✦ أكياس تيشيرت</span><span>✦ تغليف</span><span>✦ شعارات</span><span>✦ ستيكرات</span><span>✦ سوشال ميديا</span>
+      <span>✦ كليشيهات</span><span>✦ أكياس تيشيرت</span><span>✦ تغليف</span><span>✦ شعارات</span><span>✦ ستيكرات</span><span>✦ سوشال ميديا</span>
+    </div>
+  </div>
 
-<footer>© 2026 محمد صالح — معرض الأعمال</footer>
+  <section id="works" class="section container">
+    <div class="head reveal">
+      <span class="eyebrow">الأعمال</span>
+      <h2>أعمال <span class="grad">مختارة</span></h2>
+      <p>اختر التصنيف، ومرّر المؤشر فوق أي عمل لتشوف تفاصيله.</p>
+    </div>
+    <div class="filters reveal" role="tablist">
+      <button class="active" data-filter="all">الكل</button>
+      <button data-filter="bags">أكياس</button>
+      <button data-filter="packaging">تغليف وستيكرات</button>
+      <button data-filter="brand">هويات</button>
+      <button data-filter="social">تسويق</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="work reveal" data-cat="bags">
+        <div class="thumb"><img src="assets/images/bag-red.webp" alt="كيس تسوق أبيض بشعار أحمر" loading="lazy"><span class="no">٠١</span></div>
+        <div class="body"><span class="tag">أكياس</span><h3>كيس تسوق «فريش مارت»</h3><p>كليشيه بلون واحد خفّض تكلفة الطباعة على العميل 30%.</p></div>
+      </article>
+      <article class="work reveal" data-cat="bags">
+        <div class="thumb"><img src="assets/images/tshirt-bag.webp" alt="كيس تيشيرت بتصميم أزرق" loading="lazy"><span class="no">٠٢</span></div>
+        <div class="body"><span class="tag">أكياس</span><h3>كيس تيشيرت «بلو سي»</h3><p>تصميم بلونين لمحل أسماك، مقاس 40×60 جاهز للمصنع.</p></div>
+      </article>
+      <article class="work reveal" data-cat="packaging">
+        <div class="thumb"><img src="assets/images/sticker-pack.webp" alt="مجموعة ستيكرات ملونة" loading="lazy"><span class="no">٠٣</span></div>
+        <div class="body"><span class="tag">ستيكرات</span><h3>مجموعة ستيكرات لمقهى</h3><p>12 ملصقًا للتغليف رفعت صور الزبائن المنشورة بشكل ملحوظ.</p></div>
+      </article>
+      <article class="work reveal" data-cat="packaging">
+        <div class="thumb"><img src="assets/images/packaging-box.webp" alt="علبة تمور خضراء" loading="lazy"><span class="no">٠٤</span></div>
+        <div class="body"><span class="tag">تغليف</span><h3>علبة تمور فاخرة</h3><p>تصميم علبة هدايا بطابع سعودي لموسم رمضان.</p></div>
+      </article>
+      <article class="work reveal" data-cat="brand">
+        <div class="thumb"><img src="assets/images/brand-identity.webp" alt="هوية بصرية وبطاقات أعمال" loading="lazy"><span class="no">٠٥</span></div>
+        <div class="body"><span class="tag">هوية</span><h3>هوية «نوفا» التجارية</h3><p>شعار وبطاقات وألوان كاملة لشركة ناشئة في جدة.</p></div>
+      </article>
+      <article class="work reveal" data-cat="social">
+        <div class="thumb"><img src="assets/images/social-campaign.webp" alt="منشور إعلاني على جوال" loading="lazy"><span class="no">٠٦</span></div>
+        <div class="body"><span class="tag">تسويق</span><h3>حملة خصومات على إنستغرام</h3><p>سلسلة منشورات وإعلانات ضاعفت الطلبات خلال شهر.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="process" class="section process-wrap">
+    <div class="container">
+      <div class="head reveal">
+        <span class="eyebrow">منهجيتي</span>
+        <h2>من الفكرة إلى <span class="grad">المصنع</span></h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span>٠١</span><h3>نفهم الفكرة</h3><p>أسمع منك عن نشاطك وجمهورك ومقاس الكيس أو المنتج.</p></li>
+        <li class="reveal"><span>٠٢</span><h3>نجمع الإلهام</h3><p>أبحث عن أمثلة حقيقية في السوق وأحدد الاتجاه البصري.</p></li>
+        <li class="reveal"><span>٠٣</span><h3>نصمم ونعدّل</h3><p>أقدّم نماذج، ونعدّل حتى يطلع التصميم مثل ما تبغى.</p></li>
+        <li class="reveal"><span>٠٤</span><h3>نجهّز للطباعة</h3><p>ملف فيكتور نظيف بالألوان والمقاسات الصحيحة للمصنع.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <div class="final reveal">
+      <h2>جاهز نصمم <span class="grad">مشروعك القادم</span>؟</h2>
+      <p>أرسل لي فكرتك على الواتساب، وأرد عليك بالتفاصيل والسعر خلال يوم.</p>
+      <div class="cta center">
+        <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="btn btn-dark">💬 راسلني على واتساب</a>
+        <a href="mailto:mohammed.saleh@example.com" class="btn btn-light">✉️ البريد الإلكتروني</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-in">
+    <a href="#home" class="brand">معرض<span>أعمالي</span><i></i></a>
+    <span>صُمم بحب في جدة · © <span id="year">2026</span> محمد صالح</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><button aria-label="إغلاق">✕</button><img alt=""><p></p></div>
+<script src="script.js"></script>
 </body>
 </html>
